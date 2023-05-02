@@ -18,6 +18,10 @@ UPDATE [@IV_MAG_MKTDOC_CAB]
 SET U_CodigoSN = 2067, U_Estatus = 0
 wHERE Code = 20310
 
+----
+El estatus del pedido siempre debe ser 0
+Code =  Codigo del documento con error o faltante
+---
 
 
 ---Validar la correccion ---
