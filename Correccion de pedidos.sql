@@ -15,11 +15,12 @@ ORDER BY convert(int,code) DESC
 
 --Insert pra corregir erro en pedido----
 UPDATE [@IV_MAG_MKTDOC_CAB]
-SET U_CodigoSN = 2067, U_Estatus = 0
-wHERE Code = 20310
+SET U_CodigoSN = 1300, U_Estatus = 0
+wHERE Code = 20492
 
 ----
 El estatus del pedido siempre debe ser 0
+
 Code =  Codigo del documento con error o faltante
 ---
 
@@ -27,7 +28,7 @@ Code =  Codigo del documento con error o faltante
 ---Validar la correccion ---
 SELECT *
 from [@IV_MAG_MKTDOC_CAB]
-where Code = 20310
+where Code = 20492
 
 SELECT *
 from [@IV_MAG_MKTDOC_CAB]
