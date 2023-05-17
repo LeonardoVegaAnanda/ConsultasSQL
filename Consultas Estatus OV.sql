@@ -1,12 +1,4 @@
 
-Select 
-U_DateLiberacion as "Por Surtir",
-U_DateSurtido1 as "Inicio Surtido",
-U_DateSurtido2 as "Termino Surtido",
-U_DateVerificado as "Inicio Verificado",
-U_DateVerificado2 as "Termino Verificado"
-FROM ORDR
-WHERE DocNum = 568136
 
 Select 
 U_LPComision as "Liberado Ventas",
