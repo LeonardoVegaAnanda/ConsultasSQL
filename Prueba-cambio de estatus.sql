@@ -1,0 +1,4 @@
+SELECT DocNum,Series,U_EstatusOV FROM ORDR WHERE DocNum = 630664
+
+UPDATE ORDR SET U_EstatusOV = 1
+WHERE Series = 74 AND DocNum = 566109

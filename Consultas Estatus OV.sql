@@ -7,8 +7,16 @@ U_DateSurtido2 as "3 Termino Surtido",
 U_DateVerificado as "4 Inicio Verificado",
 U_DateVerificado2 as "5 Termino Verificado"
 FROM ORDR
-WHERE DocNum = 630471
+WHERE DocNum = 630656
 
+Select 
+U_DateLiberacion as "Por Surtir",
+U_DateSurtido1 as "Inicio Surtido",
+U_DateSurtido2 as "Termino Surtido",
+U_DateVerificado as "Inicio Verificado",
+U_DateVerificado2 as "Termino Verificado"
+FROM ORDR
+WHERE DocNum = 630436
 
 
 
@@ -20,12 +28,12 @@ WHERE U_EstatusOV = 1 AND DocNum = 630656
 UPDATE ORDR SET 
 U_DateSurtido1 = 
 CONVERT(varchar(20),GETDATE(),120)
-WHERE U_EstatusOV = 2 AND DocNum = 630656
+WHERE U_EstatusOV = 2 AND DocNum = 630417
 
 UPDATE ORDR SET 
 U_DateSurtido2 = 
 CONVERT(varchar(20),GETDATE(),120)
-WHERE U_EstatusOV = 3 AND DocNum = 630656
+WHERE U_EstatusOV = 3 AND DocNum = 630417
 
 UPDATE ORDR SET 
 U_DateVerificado = 
