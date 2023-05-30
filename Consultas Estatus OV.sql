@@ -1,22 +1,22 @@
 
 Select 
-U_EstatusOV,
-U_DateLiberacion as "1 Por Surtir",
-U_DateSurtido1 as "2 Inicio Surtido",
-U_DateSurtido2 as "3 Termino Surtido",
-U_DateVerificado as "4 Inicio Verificado",
-U_DateVerificado2 as "5 Termino Verificado"
-FROM ORDR
-WHERE DocNum = 630656
-
-Select 
 U_DateLiberacion as "Por Surtir",
 U_DateSurtido1 as "Inicio Surtido",
 U_DateSurtido2 as "Termino Surtido",
 U_DateVerificado as "Inicio Verificado",
 U_DateVerificado2 as "Termino Verificado"
 FROM ORDR
-WHERE DocNum = 630436
+WHERE DocNum = 630417
+
+Select 
+U_LPComision as "Liberado Ventas",
+U_DateLiberacion as "Por Surtir",
+U_DateSurtido1 as "Inicio Surtido",
+U_DateSurtido2 as "Termino Surtido",
+U_DateVerificado as "Inicio Verificado",
+U_DateVerificado2 as "Termino Verificado"
+FROM ORDR
+WHERE DocNum = 568134
 
 
 
